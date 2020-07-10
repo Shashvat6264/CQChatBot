@@ -1,0 +1,20 @@
+<html>
+    <head>
+      </head>
+      <body>
+        <div class="chat-container">
+        <script src="https://cdn.jsdelivr.net/npm/rasa-webchat/lib/index.min.js"></script>
+        <script type="text/javascript">
+          WebChat.default.init({
+          selector: ".chat-container",
+          customData: {"language": "en"}, // arbitrary custom data. Stay minimal as this will be added to the socket
+          socketUrl: "http://localhost:5005",
+          socketPath: "/socket.io/",
+          title: "Demo Bot",
+          subtitle: "Subtitle",
+          params: {"storage": "session"} // can be set to "local"  or "session". details in storage section.
+        })
+        </script>
+        </div>
+      </body>
+</html>

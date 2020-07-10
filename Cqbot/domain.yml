@@ -1,92 +1,70 @@
-intents:
-  - greet
-  - goodbye
-  - affirm
-  - deny
-  - mood_great
-  - mood_unhappy
-  - bot_challenge
-  - chitchat_intro
-  - chitchat_name
-  - chitchat_weather
-  - query_kgp_location
-  - query_kgp_intro
-  - query_kgp_clubs
-  - query_cq_intro
-  - query_cq_proc
-  - query_cq_events
-
-actions: 
-  - respond_query_kgp
-
-entities:
-  - name
-
-slots:
-  name:
-    type: text
-    auto_fill: True
-
-responses:
-  utter_greet:
-  - text: "Hey! How are you?"
-
-  utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
-
-  utter_did_that_help:
-  - text: "Did that help you?"
-
-  utter_happy:
-  - text: "Great, carry on!"
-
-  utter_goodbye:
-  - text: "Bye"
-
-  utter_iamabot:
-  - text: "I am a bot, created by Communique."
-
-  utter_divide:
-  - text: "What dou you want to do now?"
-
-  utter_ask_name:
-  - text: "What is your name?"
-  - text: "WHat should I call you?"
-
-  utter_name_greet:
-  - text: "Hi! {name}, I am a bot made by the communique team."
-
-  utter_ask_weather:
-  - text: "How is the weather in your city?"
-
-  utter_ask_query:
-  - text: "What is your query?"
-  - text: "What do you want to ask?"
-
-  utter_further_query:
-  - text: "Do you want to know something else?"
-
-  utter_query_kgp_location:
-  - text: "IIT Kharagpur is located just outside the town of Kharagpur, in the Hijli village. For better, result go to this link."
-
-  utter_query_kgp_intro:
-  - text: "The Indian Institute of Technology Kharagpur (IIT Kharagpur or IIT-KGP) is a public technical and research university established by the government of India in 1951.
-   It is the first of the IITs to be established and is recognised as an Institute of National Importance. In 2019 it was awarded the status of Institute of Eminence by the government of India."
-
-  utter_query_kgp_clubs:
-  - text: "In IIT Kharagpur, Society culture is very widespread. Being isolated with outside world, students make small groups or societies inside where seniors teach related skills."
-
-  utter_query_cq_intro:
-  - text: "Communique is a soft skill society."
-  
-  utter_query_cq_proc:
-  - text: "Selection process for communique is pretty straightforward.
-  It consists of two rounds. First being a Group discussion. Second being a Personal Interview."
-  
-  utter_query_cq_events:
-  - text: "Here is a gallery of all events organized by us."
-
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
+intents:
+- greet
+- goodbye
+- affirm
+- deny
+- mood_great
+- mood_unhappy
+- bot_challenge
+- chitchat_intro
+- chitchat_name
+- chitchat_weather
+- query_intro
+- querykgp
+- querycq
+- out_of_scope
+entities:
+- name
+slots:
+  name:
+    type: text
+responses:
+  utter_default:
+  - text: Sorry, I didn't understand that.
+  utter_greet:
+  - text: Hey! How are you?
+  utter_cheer_up:
+  - image: https://i.imgur.com/nGF1K8f.jpg
+    text: 'Here is something to cheer you up:'
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_happy:
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: Bye
+  utter_iamabot:
+  - text: I am a bot, created by Communique.
+  utter_divide:
+  - text: What do you want to do now?
+  utter_ask_name:
+  - text: What is your name?
+  - text: What should I call you?
+  utter_name_greet:
+  - text: Hi! {name}, I am a bot made by the communique team.
+  utter_ask_weather:
+  - text: How is the weather in your city?
+  utter_ask_query:
+  - text: What is your query?
+  - text: What do you want to ask?
+  utter_further_query:
+  - image: https://www.google.com/
+    text: Do you want to know something else?
+actions:
+- respond_querykgp
+- respond_querycq
+- utter_default
+- utter_greet
+- utter_cheer_up
+- utter_did_that_help
+- utter_happy
+- utter_goodbye
+- utter_iamabot
+- utter_divide
+- utter_ask_name
+- utter_name_greet
+- utter_ask_weather
+- utter_ask_query
+- utter_further_query

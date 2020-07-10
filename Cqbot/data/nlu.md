@@ -5,12 +5,15 @@
 - good morning
 - good evening
 - hey there
+- how are you doing?
 
 ## intent:goodbye
 - bye
 - goodbye
 - see you around
 - see you later
+- thank you
+- nice meeting you
 
 ## intent:affirm
 - yes
@@ -18,6 +21,8 @@
 - of course
 - that sounds good
 - correct
+- you are correct
+- yeah
 
 ## intent:deny
 - no
@@ -48,6 +53,7 @@
 - not very good
 - extremely sad
 - so sad
+- i am sad
 
 ## intent:bot_challenge
 - are you a bot?
@@ -63,6 +69,7 @@
 - I am just looking for a friend.
 - Nothing just.
 - Just wanna chat with you.
+- Nothing much you tell
 
 ## intent:chitchat_name
 - I am [Shashvat](name)
@@ -70,15 +77,18 @@
 - You can call me [Sajal](name)
 - People call me [Karan](name)
 - I am called [Adu](name)
+- i am [shashvat](name)
+- my name is [Shashvat](name)
 
 ## intent:chitchat_weather
 - The weather is nice.
 - It is pleasant.
-- The weather here is very bad. 
+- The weather here is very bad.
 - It's raining here.
-- There is a cyclone here. 
+- There is a cyclone here.
 - It is really sunny.
 - The weather is cold.
+- its pleasant
 
 ## intent:query_intro
 - I have a doubt.
@@ -87,8 +97,10 @@
 - I am in a little bit of confusion.
 - Can I ask you something?
 - I wanted to know something.
+- i have a doubt
+- i had a doubt
 
-## intent:query_kgp_intro
+## intent:querykgp/intro
 - What is IIT Kharagpur?
 - What is IIT KGP?
 - What is iit kharagpur?
@@ -96,7 +108,7 @@
 - What is iit kgp famous for?
 - What is special in iit kgp?
 
-## intent:query_kgp_clubs
+## intent:querykgp/clubs
 - Explain the Club culture in IIT KGP?
 - Explain the club culture in iit kharagpur?
 - what are clubs or societies?
@@ -104,7 +116,7 @@
 - What are iit kgp clubs?
 - What are iit kharagpur societies?
 
-## intent:query_kgp_location
+## intent:querykgp/location
 - Where is IIT Kharagpur?
 - Where is IIT KGP?
 - Where is iit kharagpur?
@@ -113,7 +125,7 @@
 - What is the location of iit kharagpur?
 - What is the location of iit kgp?
 
-## intent:query_cq_intro
+## intent:querycq/intro
 - What is CQ?
 - What is communique?
 - What is the purpose of this society?
@@ -122,7 +134,7 @@
 - Purpose of this society is?
 - What do you do?
 
-## intent:query_cq_proc
+## intent:querycq/proc
 - How to enter Cq?
 - How to enter Communique?
 - Selection procedure of CQ?
@@ -132,10 +144,42 @@
 - How can I be a part of your society?
 - How can I be a part of Communique?
 
-## intent:query_cq_events
+## intent:querycq/events
 - What events does CQ organise?
 - What are some recent events you organized?
 - Some events organized by CQ?
 - What all events are conducted by Communique?
 - What type of events have been conducted by Communique?
 - How many seminars has Communique organized?
+
+## intent:querycq/contact
+- With whoms should i get in touch?
+- Can I have a contact number?
+- Whom should I contact?
+- I have further queries whom should I contact?
+- I want to contact someone in cq.
+
+## intent:querycq/register
+- I want to register to become associate.
+- Where is the registration form?
+- How do I register?
+- Where is the form for selection?
+
+## intent:out_of_scope
+- ???
+- haha
+- hehe
+- pakmdf
+- asdlkf
+
+## intent:querykgp
+- what is iit?
+- where is iit kgp?
+- i want to know about iit kgp?
+- what is iit kgp?
+- what is iit kgp
+- where is iit KGP?
+
+## intent:querycq
+- I want to ask what is CQ?
+- what is cq

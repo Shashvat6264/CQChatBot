@@ -1,6 +1,7 @@
 ## happy path
 * greet
   - utter_greet
+  - utter_divide
 * mood_great
   - utter_happy
 
@@ -17,6 +18,7 @@
 ## sad path 2
 * greet
   - utter_greet
+  - utter_divide
 * mood_unhappy
   - utter_cheer_up
   - utter_did_that_help
@@ -43,35 +45,14 @@
 * chitchat_weather
   - utter_happy
 
-## query kgp intro long
+## query kgp long
 * greet
   - utter_greet
   - utter_divide
 * query_intro
   - utter_ask_query
-* query_kgp_intro
-  - utter_query_kgp_intro
-  - utter_further_query
-
-## query kgp clubs long
-* greet
-  - utter_greet
-  - utter_divide
-* query_intro
-  - utter_ask_query
-* query_kgp_clubs
-  - utter_query_kgp_clubs
-  - utter_further_query
-
-## query kgp location long
-* greet
-  - utter_greet
-  - utter_divide
-* query_intro
-  - utter_ask_query
-* query_kgp_location
-  - utter_query_kgp_location
-  - utter_further_query
+* querykgp
+  - respond_querykgp
 
 ## query cq intro long
 * greet
@@ -79,36 +60,10 @@
   - utter_divide
 * query_intro
   - utter_ask_query
-* query_cq_intro
-  - utter_query_cq_intro
+* querycq
+  - respond_querycq
   - utter_further_query
 
-## query cq proc long
-* greet
-  - utter_greet
-  - utter_divide
-* query_intro
-  - utter_ask_query
-* query_cq_proc
-  - utter_query_cq_proc
-  - utter_further_query
-
-## query cq events long
-* greet
-  - utter_greet
-  - utter_divide
-* query_intro
-  - utter_ask_query
-* query_cq_events
-  - utter_query_cq_events
-  - utter_further_query
-
-<!-- ## query cq contact long
-* greet
-  - utter_greet
-  - utter_divide
-* query_intro
-  - utter_ask_query
-* query_cq_contact
-  - utter_query_cq_contact
-  - utter_further_query -->
+## fallback story
+* out_of_scope
+  - action_default_fallback
