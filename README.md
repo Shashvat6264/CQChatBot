@@ -2,7 +2,7 @@
 Chat Bot with rasa and Python for CQ website
 
 ## How to run it
-1. Install Rasa
+1. Install Rasa from [here](https://rasa.com/docs/rasa/user-guide/installation/)
 2. Clone this repo.
 3. Open script
 4. Run the following commands.
