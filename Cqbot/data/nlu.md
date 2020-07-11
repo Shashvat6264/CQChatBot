@@ -6,6 +6,7 @@
 - good evening
 - hey there
 - how are you doing?
+- what are you doing?
 
 ## intent:goodbye
 - bye
@@ -70,6 +71,8 @@
 - Nothing just.
 - Just wanna chat with you.
 - Nothing much you tell
+- i am sad today
+- nothing much
 
 ## intent:chitchat_name
 - I am [Shashvat](name)
@@ -79,6 +82,8 @@
 - I am called [Adu](name)
 - i am [shashvat](name)
 - my name is [Shashvat](name)
+- I am Advait
+- i am Advait
 
 ## intent:chitchat_weather
 - The weather is nice.
@@ -128,11 +133,11 @@
 ## intent:querycq/intro
 - What is CQ?
 - What is communique?
-- What is the purpose of this society?
-- What does this society do?
-- What is the purpose of Communique?
-- Purpose of this society is?
-- What do you do?
+- Communique
+- Why communique?
+- cq
+- Devoloment of what trait?
+- How does cq help me?
 
 ## intent:querycq/proc
 - How to enter Cq?
@@ -165,12 +170,26 @@
 - How do I register?
 - Where is the form for selection?
 
+## intent:querycq/purpose
+- What is the purpose of cq?
+- What does the Communique team do?
+- Purpose of cq
+- What is the purpose of communique?
+- what does cq do?
+- what will i do in cq?
+- WHat happens in cq?
+
+## intent:querycq/activity
+- What are the activities organized by cq?
+- Some activites conducted by communique are?
+- Activites by cq
+- What kind of activities are conducted by cq?
+- activities in cq?
+
 ## intent:out_of_scope
 - ???
 - haha
 - hehe
-- pakmdf
-- asdlkf
 
 ## intent:querykgp
 - what is iit?
@@ -183,3 +202,6 @@
 ## intent:querycq
 - I want to ask what is CQ?
 - what is cq
+- what events are organized by cq?
+- what is cq?
+- what actuvities are conducted by cq?

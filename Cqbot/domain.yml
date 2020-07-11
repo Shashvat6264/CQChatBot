@@ -26,11 +26,6 @@ responses:
   - text: Sorry, I didn't understand that.
   utter_greet:
   - text: Hey! How are you?
-  utter_cheer_up:
-  - image: https://i.imgur.com/nGF1K8f.jpg
-    text: 'Here is something to cheer you up:'
-  utter_did_that_help:
-  - text: Did that help you?
   utter_happy:
   - text: Great, carry on!
   utter_goodbye:
@@ -50,15 +45,12 @@ responses:
   - text: What is your query?
   - text: What do you want to ask?
   utter_further_query:
-  - image: https://www.google.com/
-    text: Do you want to know something else?
+  - text: Do you want to know something else? To mail us your query click [here](http://www.google.com)
 actions:
 - respond_querykgp
 - respond_querycq
 - utter_default
 - utter_greet
-- utter_cheer_up
-- utter_did_that_help
 - utter_happy
 - utter_goodbye
 - utter_iamabot
